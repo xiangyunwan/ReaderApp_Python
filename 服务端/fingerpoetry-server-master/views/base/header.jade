@@ -1,0 +1,45 @@
+.navbar.navbar-default.navbar-fixed-top
+  .container
+    .navbar-header
+      a.navbar-brand(href="/") 指尖书香
+      button.navbar-toggle(type="button" data-toggle="collapse" data-target="#navbar-main")
+         span.icon-bar
+         span.icon-bar
+         span.icon-bar
+
+
+    .navbar-collapse.collapse(id="navbar-main")
+      ul.nav.navbar-nav
+        //<li class="dropdown">
+        //  <a class="dropdown-toggle" data-toggle="dropdown" href="http://bootswatch.com/united/#" id="themes" aria-expanded="false">Themes
+        //    <span class="caret"></span></a>
+        //  <ul class="dropdown-menu" aria-labelledby="themes">
+        //    <li>
+        //      <a href="http://bootswatch.com/default/">Default</a></li>
+        //    <li class="divider"></li>
+        //    <li>
+        //      <a href="http://bootswatch.com/cerulean/">Cerulean</a></li>
+        //    <li>
+        //      <a href="http://bootswatch.com/cosmo/">Cosmo</a></li>
+        //
+        //  </ul>
+        //</li>
+        if location == "topic"
+          li.active
+            a(href="/") 频道
+        else
+          li
+            a(href="/") 频道
+        li
+          a(href="/softs/android-app-release.apk") 安卓客户端
+        //if location == "site"
+        //  li.active
+        //    a(href="/") 站点
+        //else
+        //  li
+        //    a(href="/") 站点
+      //ul.nav.navbar-nav.navbar-right
+      //  li
+      //    a(href="/") 登录
+      //  li
+      //    a(href="/") 注册

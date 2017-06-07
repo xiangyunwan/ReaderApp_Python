@@ -1,0 +1,20 @@
+mongo:
+  restart: always
+  image: mongo:3.3
+  ports:
+    - "27017"
+redis:
+  restart: always
+  image: redis:3.0.5
+  ports:
+    - "6379"
+server:
+  restart: always
+  build: .
+  volumes:
+      - "/root/fingerserver:/usr/src/app"
+  ports:
+    - "3000:3000"
+  links:
+    - redis:cache
+    - mongo:mongo

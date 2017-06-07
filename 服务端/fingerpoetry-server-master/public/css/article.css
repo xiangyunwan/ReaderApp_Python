@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.5em;
+    background: #F5FCFF;
+}
+#content{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#content a {
+    text-decoration: none;
+    outline: 0 none;
+    pointer-events: none;
+    color: inherit;
+    cursor: default;
+}
+
+.headinfo{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+p {
+    marginTop: 5;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1{
+    font-size: 1.30em;
+    margin-bottom: 5px;
+}
+
+.timestamp{
+    display: block;
+    font-size: 0.85em;
+    color: darkgray;
+}
+
+.srcurl{
+    font-size: 0.85em;
+    padding-left: 2%;
+}
+
+
+.downloadapk{
+    font-size: 1em;
+    padding: 2% 2% 2% 2%;
+    position: relative;
+    background-color:#f8a09c;
+    text-align: center;
+    margin: 0 auto;
+    border: 2px;
+    border-color: #6cf8a09c;
+}
+.downloadapk a{
+    color: #fafafa;
+}
+
+.downloadapk a:hover{
+    color: white;
+}

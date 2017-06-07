@@ -1,0 +1,24 @@
+不知道大家这个年过的怎么样，因为工作变动导致网站好长时间没有更新了，这里给大家说声抱歉，以后我会尽量按时更新。这次给大家分享的是一个诗词散文阅读和小说更新的开源 APP。
+服务端是使用源于 Node.js 的 HTML 模板引擎--Jade构建的。
+爬虫是用py写的。
+android是用android studio写的。没找到apk所以无法给大家演示了，感兴趣的可以自己下载试一下，爬虫和服务已经全部打包了。
+项目主页：https://github.com/klisly/fingerpoetry-android本站之前也介绍过无数个类似的诗词或者小说项目，可以相互参照。
+
+                ╔═══════════════╗
+                ║       安卓源码服务专家       ║
+  ╔══════╣───────────────╠══════╗
+  ║            ║    http://www.javaapk.com    ║            ║
+  ║            ╚═══════════════╝            ║
+　║                                                          ║
+　║JavaApk声明：                                             ║
+  ║   1) 程序如果跑不起来需要自调，javaapk做船但不帮您扬帆。 ║
+  ║   2) 免费例子大全http://www.javaapk.com/demo不定期更新。 ║
+  ║   3) 如有版权争议欢迎随时联系javaapk。                   ║
+  ║   4) 源码仅限学习交流，切勿移作他用。                    ║
+  ║   5) 转载请保留本源码说明，赠人玫瑰，手留余香。          ║
+　║                                                          ║
+  ║           JavaApk —— 安卓源码服务专家                  ║
+  ║           联系方式 :QQ18805870  javaapk@qq.com           ║
+  ║    ╔═══════════════════════╗    ║
+  ╚══╣    安卓源码专业站 http://www.JavaApk.com     ╠══╝
+        ╚═══════════════════════╝

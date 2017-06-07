@@ -1,0 +1,29 @@
+<!--
+  ~ Copyright (C) 2016 Baidu, Inc. All Rights Reserved.
+  -->
+
+<!--menu_main.xml-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/action_manage_topic"
+        android:title="@string/manage_topic"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_as_home"
+        android:title="@string/as_home"
+        android:visible="true"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_recom_setting"
+        android:title="@string/recom_setting"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_reget"
+        android:title="@string/reget"
+        android:visible="false"
+        app:showAsAction="never" />
+</menu>

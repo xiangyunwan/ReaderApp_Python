@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="6dp"
+        android:text="@string/choose_tip"
+        android:textColor="@color/background_black_alpha_50"
+        android:textSize="14sp" />
+    <com.klisly.bookbox.widget.draglistview.DragListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recy"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/recy_padding_horizontal"
+        android:paddingRight="@dimen/recy_padding_horizontal"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_vertical"
+        android:paddingTop="@dimen/padding_vertical"
+        android:paddingLeft="@dimen/padding_horizontal"
+        android:paddingRight="@dimen/padding_horizontal"
+        android:background="@drawable/item_choose"
+        >
+        <com.material.widget.PaperButton
+            android:id="@+id/btn_enter_direct"
+            android:layout_width="96dp"
+            android:layout_height="48dp"
+            widget:paper_color="@color/background"
+            widget:paper_shadow_color="@color/white"
+            widget:paper_text_color="@color/switch_thumb_color"
+            widget:paper_text_size="@dimen/text_size_14"
+            widget:paper_text="@string/enter_direct"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <com.material.widget.PaperButton
+            android:id="@+id/btn_next"
+            android:layout_width="96dp"
+            android:layout_height="48dp"
+            widget:paper_shadow_color="@color/accent"
+            widget:paper_color="@color/primary"
+            widget:paper_disable_color="@color/primaryLight"
+            widget:paper_text_color="@color/white"
+            widget:paper_text_size="@dimen/text_size_14"
+            widget:paper_text="@string/next"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

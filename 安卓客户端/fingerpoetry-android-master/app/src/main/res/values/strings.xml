@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"  tools:ignore="MissingTranslation">
+
+<string name="app_name">指尖书香</string>
+
+    <string name="navigation_drawer_open">打开抽屉</string>
+    <string name="navigation_drawer_close">关闭抽屉</string>
+
+    <string name="register_login">注册/登陆</string>
+    <string name="homepage">频道</string>
+    <string name="site">站点</string>
+    <string name="novel">小说更新</string>
+    <string name="magzine">朝花夕拾</string>
+    <string name="mine">我的</string>
+    <string name="setting">设置</string>
+    <string name="about">关于</string>
+    <string name="password">密码</string>
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="unknown_error">未知错误</string>
+    <string name="net_error">网络异常</string>
+    <string name="parse_error">解析异常</string>
+    <string name="net_disconnect">网络中断，请检查您的网络状态</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_forgetpass_link">忘记密码?</string>
+    <string name="loginwithothers">或使用以下帐号登录</string>
+    <string name="validcode">验证码</string>
+    <string name="getcode">获取验证码</string>
+    <string name="phone">手机号</string>
+    <string name="passwordtip">密码(最少6位字符数字组合)</string>
+    <string name="phone_null">手机号不能为空!</string>
+    <string name="phone_invalid">手机号格式不正确!</string>
+    <string name="password_null">密码不能为空!</string>
+    <string name="password_mismatch">两次密码不一致!</string>
+    <string name="password_min_length">密码不能少于6位</string>
+    <string name="getcode_fail">获取验证码失败,请重试</string>
+    <string name="validcode_null">验证码不能为空</string>
+    <string name="nicknametip">取一个容易让人记住的昵称</string>
+    <string name="nickname_null">昵称不能为空</string>
+    <string name="register_success">注册成功</string>
+    <string name="code_invalid">验证码不正确</string>
+    <string name="reset_passwd">修改密码</string>
+    <string name="restpass_success">修改密码成功</string>
+    <string name="tip">提示</string>
+    <string name="confirm_exit">确定要注销吗?</string>
+    <string name="cancle">取消</string>
+    <string name="confirm">确定</string>
+    <string name="recom_setting">推荐设置</string>
+    <string name="reget">朝花夕拾</string>
+    <string name="find_site">发现站点</string>
+    <string name="manage_site">站点管理</string>
+    <string name="sort_method">排序方式</string>
+    <string name="notify_setting">更新提醒</string>
+    <string name="mine_center">个人中心</string>
+    <string name="find_topic">发现频道</string>
+    <string name="manage_topic">管理频道</string>
+    <string name="choose_topic" >关注你感兴趣的频道</string>
+    <string name="choose_site" >关注你感兴趣的站点</string>
+    <string name="enter_direct">跳过</string>
+    <string name="next">下一步</string>
+    <string name="finish">完成</string>
+    <string name="focused">已关注</string>
+    <string name="unfocus">未关注</string>
+    <string name="focus">关注</string>
+    <string name="articlenum">篇文章</string>
+    <string name="focurnum">人关注</string>
+    <string name="hot">热门</string>
+    <string name="recommend">推荐</string>
+    <string name="choose_tip">单击增删频道,长按拖拽排序</string>
+    <string name="start_load">开始加载</string>
+    <string name="load_success">加载完成</string>
+    <string name="load_empty">没有更新,去看其他的频道吧</string>
+    <string name="get_detial_fail">抱歉，还没收集到这篇文章内容</string>
+    <string name="collect">添加收藏</string>
+    <string name="nocollect">取消收藏</string>
+    <string name="share">分享</string>
+    <string name="report">投诉</string>
+    <string name="see_orginal">查看原文</string>
+    <string name="toread">添加待读</string>
+    <string name="notoread">取消待读</string>
+    <string name="readed">已读</string>
+    <string name="toreaded">我的待读</string>
+    <string name="collected">我的收藏</string>
+    <string name="recentread">最近浏览</string>
+    <string name="change_avatar">更换头像</string>
+    <string name="change_name">修改昵称</string>
+    <string name="modify_profile">编辑个人资料</string>
+    <string name="modify_avatar_tip">以名明志,2-15个字符</string>
+    <string name="change_name_tip">修改昵称</string>
+    <string name="third_unset_pass">第三方账户不能修改密码</string>
+    <string name="choose_user_relate_tip">单击查看文章,长按删除</string>
+    <string name="exit_tip">快速双击退出</string>
+    <string name="clickreload">您刚才看到这里,点我刷新</string>
+    <string name="recom_log">登录后,可享受智能推荐服务</string>
+    <string name="slogn">在诗和远方中寻找宁静</string>
+
+    <string name="android_auto_update_dialog_title">发现新版本</string>
+
+    <string name="android_auto_update_notify_ticker">发现新版本,点击进行升级</string>
+    <string name="android_auto_update_notify_content">发现新版本,点击进行升级</string>
+
+    <string name="android_auto_update_dialog_btn_download">立即下载</string>
+    <string name="android_auto_update_dialog_btn_cancel">以后再说</string>
+
+    <string name="android_auto_update_toast_no_new_update">已经是最新版本</string>
+
+    <string name="android_auto_update_download_progress">正在下载:%1$d%%</string>
+
+    <string name="android_auto_update_dialog_checking">正在检查版本</string>
+    <string name="update">小说更新</string>
+    <string name="manage_novel">订阅管理</string>
+    <string name="search_novel">搜索小说</string>
+    <string name="search_hint">搜索小说</string>
+    <string name="canclefocus">取消关注</string>
+    <string name="entrnovel">看小说</string>
+    <string name="entrchapter">看美文</string>
+    <string name="as_home">设为主页</string>
+    <string name="success_as_home">成功设为首页</string>
+    <string name="search">搜索</string>
+
+</resources>

@@ -1,0 +1,123 @@
+extends default
+block content
+    script
+        include ../public/js/index.js
+    div.container
+        div.row
+            div.aw-content-wrap.clearfix
+                div.col-sm-12.col-md-9.aw-main-content
+                    <!-- tab切换 -->
+                    ul.nav.nav-tabs.aw-nav-tabs.active(id="tab_nav")
+                        if opts.topic == '历史'
+                            li.active
+                                a(href="javascript:void('')")
+                                    |历史
+                        else
+                            li
+                                a(href="javascript:void('')")
+                                    | 历史
+                        if opts.topic == '趣闻'
+                            li.active
+                                a(href="javascript:void('')")
+                                    | 趣闻
+                        else
+                            li
+                                a(href="javascript:void('')")
+                                    | 趣闻
+                        if opts.topic == '杂文'
+                            li.active
+                                a(href="javascript:void('')")
+                                    | 杂文
+                        else
+                            li
+                                a(href="javascript:void('')")
+                                    | 杂文
+                        if opts.topic == '故事'
+                            li.active
+                                a(href="javascript:void('')")
+                                    | 故事
+                        else
+                            li
+                                a(href="javascript:void('')")
+                                    | 故事
+                        if opts.topic == '段子'
+                            li.active
+                                a(href="javascript:void('')")
+                                    | 段子
+                        else
+                            li
+                                a(href="javascript:void('')")
+                                    | 段子
+                        if opts.topic == '诗歌'
+                            li.active
+                                a(href="javascript:void('')")
+                                    | 诗歌
+                        else
+                            li
+                                a(href="javascript:void('')")
+                                    | 诗歌
+                        if opts.topic == '美文'
+                            li.active
+                                a(href="javascript:void('')")
+                                    | 美文
+                        else
+                            li
+                                a(href="javascript:void('')")
+                                    | 美文
+                        if opts.topic == '热门'
+                            li.active
+                                a(href="javascript:void('')")
+                                    | 热门
+                        else
+                            li
+                                a(href="javascript:void('')")
+                                    | 热门
+                        h2.hidden-xs
+                            i.icon.icon-list
+                            | 频道
+                    <!-- end tab切换 -->
+                    div.aw-mod.aw-explore-list
+                        div.mod-body
+                            div.aw-common-list
+                                each article in articles
+                                    div.aw-item
+                                        div.aw-question-content
+                                            h4
+                                                a(href="/articles/#{article.id}")
+                                                    | #{article.title}
+                                            p
+                                                span.text-color-999
+                                                    | #{article.site} • #{article.readCount} 次浏览 • #{article.collectCount} 人收藏
+                            div.mod-footer
+                                div.page-control
+                                    ul.pagination.pull-right
+                                        if opts.page == 1
+                                            li.disabled
+                                                a
+                                                    |上一页
+                                        else
+                                            li
+                                                a
+                                                    |上一页
+                                        li
+                                            a
+                                                | 第
+                                                span(id="curpage")
+                                                    |#{opts.page}
+                                                |页
+                                        li
+                                            a
+                                                | 下一页
+                <!-- 侧边栏 -->
+                div.col-sm-12.col-md-3.aw-side-bar.hidden-xs.hidden-sm
+                    div.aw-mod.aw-text-align-justify
+                        div.mod-head
+                            h3
+                                | 热门文章
+                        div.mod-body(id="hotarticle")
+
+                    div.aw-mod.aw-text-align-justify
+                        div.mod-head
+                            h3(id="typeTitle")
+                                | 热门站点
+                        div.mod-body(id="hotype")

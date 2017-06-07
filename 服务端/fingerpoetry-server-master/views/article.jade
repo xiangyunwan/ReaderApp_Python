@@ -1,0 +1,51 @@
+extends default
+block content
+    style
+        include ../public/css/article.css
+    script
+        include ../public/js/article.js
+    div.container
+        div.row
+            div.aw-content-wrap.clearfix
+
+                div.col-sm-12.col-md-9.aw-main-content
+                    div.downloadapk
+                        a(href="/softs/android-app-release.apk")
+                            | 点我下载客户端,阅读更多的文章。
+                    div.headinfo
+                        h1
+                            | #{article.title}
+                        span.timestamp
+                            | 时间:&nbsp;#{moment(article.createAt).utc().utcOffset(+8).format("MM-DD HH:mm")}&nbsp;&nbsp;&nbsp;&nbsp;来源:&nbsp;#{article.site}
+                    div(id="content")
+                        |!{article.content}
+                    div.srcurl
+                            a(href="#{article.srcUrl}")
+                                | 查看原文
+                <!-- 侧边栏 -->
+                div.col-sm-12.col-md-3.aw-side-bar.hidden-xs.hidden-sm
+                    div.aw-mod
+                        div.mod-head
+                            h3(id="type")
+                                | 频道
+                        div.mod-body
+                            ul
+                                li
+                                    a(id="topic",href="/?topic=#{topic}")
+                                        | #{topic}
+                    div.aw-mod.aw-text-align-justify
+                        div.mod-head
+                            a.pull-right(href="/?topic=#{topic}")
+                                |更多 &gt;
+                            h3
+                                |热门文章
+                        div.mod-body(id="hotarticle")
+
+
+                    div.aw-mod.aw-text-align-justify
+                        div.mod-head
+                            a.pull-right(href="/")
+                                | 更多 &gt;
+                            h3(id="typeTitle")
+                                | 热门文章
+                        div.mod-body(id="hotype")
